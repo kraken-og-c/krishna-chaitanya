@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--font-inter), sans-serif;
+  background: radial-gradient(circle at top, #1a1a1a, #080808 45%);
+}
+
+h1,
+h2,
+h3,
+.display-font {
+  font-family: var(--font-anton), sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.section-wrap {
+  @apply mx-auto max-w-7xl px-6 py-20 md:px-10;
+}
+
+.glass {
+  @apply border border-white/10 bg-white/5 backdrop-blur-md;
+}
